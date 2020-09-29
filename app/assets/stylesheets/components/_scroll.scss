@@ -69,27 +69,32 @@ html, body {
   flex-flow: column nowrap;
   color: #fff;
   font-family: Montserrat;
-  text-transform: uppercase;
+
   transform: translateY($content-offset);
   will-change: transform;
   backface-visibility: hidden;
   @include transition($transition-speed + .5, all, cubic-bezier(0.22, 0.44, 0, 1));
   }
   &-title {
-    font-size: 12vh;
+    font-size: 3em;
     line-height: 1.4;
+    width: 70%;
+    margin: 0 auto;
+    font-weight: bold;
   }
   &-subtitle {
     font-size: 80px;
   }
   &-subtitle2 {
-    font-size: 40px;
+    font-size: 1em;
+    margin-top: 20px;
   }
   &-contact {
     background-color: white;
-    height: auto;
-    width: 70vw;
+    height: 80vh;
+    width: 80vw;
     margin: 0 auto;
+    padding: 5vw;
     border-bottom-right-radius: 40px;
     border-top-left-radius: 40px;
     box-shadow: 10px 13px 10px 4px rgba(0,0,0,0.40);
@@ -97,13 +102,14 @@ html, body {
   &-details {
     background-color: white;
     height: 80vh;
-    width: 60vw;
+    width: 80vw;
     margin: 0 auto;
-    padding: 40px;
+    padding: 20px;
     border-bottom-right-radius: 40px;
     border-top-left-radius: 40px;
     box-shadow: 10px 13px 10px 4px rgba(0,0,0,0.40);
   }
+
   &-details2 {
     background-color: white;
     height: 80vh;
@@ -146,6 +152,10 @@ html, body {
 }
 
 
-.titre{
-  margin: 0 150px;
-}
+// .titre{
+//   margin: 0 150px;
+// }
+.textdetailtitle{
+    font-size: 1em;
+    text-transform: uppercase;
+  }
