@@ -80,6 +80,4 @@ test:
 #
 production:
   <<: *default
-  database: Yves_production
-  username: Yves
-  password: <%= ENV['YVES_DATABASE_PASSWORD'] %>
+  url: <%= ENV['POSTGRESQL_ADDON_URI'] %>
