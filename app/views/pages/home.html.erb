@@ -1,2 +1,116 @@
-<h1>Pages#home</h1>
-<p>Find me in app/views/pages/home.html.erb</p>
+<!-- <div class="navbar navbar-expand-sm navbar-light navbar-lewagon">
+  <h2 class="navbar-title">DUMORTIER Yves</h2>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <a class="nav-link" href="#">Accueil</a>
+      <a class="nav-link" href="#">Galerie photo</a>
+      <a class="nav-link" href="#">02 99 66 46 09</a>
+    </ul>
+  </div>
+</div>
+ -->
+
+
+  <section class="background" id="background">
+
+    <div class="content-wrapper">
+      <p class="content-title titre">Yves Dumortier </p>
+      <p class="content-subtitle2">Brocante , debarras complet , achat vente militaria en Bretagne . </p>
+      <i class="content-subtitle fas fa-sort-down"></i>
+    </div>
+  </section>
+  <section class="background" id="background">
+
+    <div class="content-wrapper">
+      <i class="content-subtitle fas fa-sort-down"></i>
+      <div class="detailspage">
+        <div class="content-details">
+          <div class="textdetail">
+            <h3>Le Brocante St Aubinaise</h3>
+            <p>Merci de bien vouloir remplir ce formulaire afin de me faire part de vos demandes.</p>
+          </div>
+        </div>
+        <div class="content-details2">
+          <div class="textdetail">
+            <h3>details 2</h3>
+            <p>Merci de bien vouloir remplir ce formulaire afin de me faire part de vos demandes.</p>
+          </div>
+        </div>
+      </div>
+      <!-- <p class="content-subtitle">Scroll down and up to see the effect!</p> -->
+    </div>
+  </section>
+
+
+  <section class="background">
+    <div class="content-wrapper">
+      <i class="content-subtitle fas fa-sort-up"></i>
+      <div class="content-contact">
+        <div class="textcontact">
+          <h3>Contactez-moi</h3>
+          <p>Merci de bien vouloir remplir ce formulaire afin de me faire part de vos demandes.</p>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <form action="https://formspree.io/xaylnoqq" method="post" enctype="application/x-www-form-urlencoded" name="formulaire">
+          <div class="formposition">
+            <div class="ligne">
+
+              <input id="nom" type="text" placeholder="Nom*" size="41" name="nom" required><br>
+              <input type="email" placeholder="Courriel*" name="email" size="41" required><br>
+              <input type="phone" type="number" placeholder="Téléphone*" name="phone" size="41" required><br>
+
+            </div>
+            <div class="ligne3">
+              <textarea name="message" placeholder="Tapez içi votre message" rows="6" cols="41" required></textarea><br>
+            </div>
+
+                <p class="law">** Les informations recueillies font l’objet d’un traitement informatique destiné à BEDEL HUGUES,
+                  responsable du traitement, aux fins de proposition de produits et/ou services et de prospection commerciale.
+                  Les données sont également destinées à Futur Digital prestataire de la société BEDEL HUGUES pour l’exécution
+                  contrat qui les lie. Conformément à la réglementation en vigueur, vous disposez notamment d'un droit
+                   d'opposition, d'accès, de rectification et d'effacement sur les données personnelles qui vous concernent.
+                  Pour plus d’informations, cliquez ici. </p>
+
+
+          </div>
+          <input id="envoyer" type="submit">
+        </form>
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+    </div>
+  </section>
+
+  <%= render "shared/menu" %>
+
+
+
+
+
