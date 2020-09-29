@@ -1,9 +1,10 @@
 .formposition {
-  display: flex;
-  justify-content: space-around;
+  // display: flex;
+  // justify-content: space-around;
   grid-gap: 25px;
-  flex-wrap: wrap;
+  // flex-wrap: wrap;
   margin: 40px 40px;
+
 }
 #envoyer{
   margin-bottom: 40px;
@@ -17,15 +18,16 @@
 .textcontact{
   color: black;
   text-align: left;
-  font-size: 10px;
   margin-top: 20px;
+}
+.textcontact h3{
+  font-size: 3vh;
 }
 .textcontact p{
   font-size: 2vh;
 }
 .laws{
   position: absolute;
-
 }
 
 .law{
@@ -40,5 +42,20 @@
 }
 #accept{
 text-align: center;
+
+}
+.container{
+  color: black;
+}
+.row1{
+  margin-top: 15px;
+  width: 100%;
+}
+.row2{
+  margin-top: 15px;
+  width: 100%;
+}
+.row3{
+  margin-top: 15px;
 
 }
