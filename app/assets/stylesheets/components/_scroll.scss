@@ -100,6 +100,7 @@ html, body {
     border-bottom-right-radius: 40px;
     border-top-left-radius: 40px;
     box-shadow: 10px 13px 10px 4px rgba(0,0,0,0.40);
+    overflow: scroll;
   }
   &-details {
     background-color: white;
