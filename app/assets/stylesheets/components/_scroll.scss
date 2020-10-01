@@ -107,7 +107,7 @@ html, body {
     height: 80vh;
     width: 80vw;
     margin: 0 auto;
-    padding: 20px;
+    padding: 5vw;
     border-bottom-right-radius: 40px;
     border-top-left-radius: 40px;
     box-shadow: 10px 13px 10px 4px rgba(0,0,0,0.40);
@@ -164,12 +164,19 @@ html, body {
   }
 #arrows1{
   font-size: 6vh;
+  width: 25px;
+  margin: 0 auto;
 }
 #arrows2{
   font-size: 6vh;
   margin-bottom: 10px;
+  width: 25px;
+  margin: 15px auto 8px auto;
 }
 #arrows3{
   font-size: 6vh;
   margin-top: 30px;
+  width: 25px;
+  margin: 25px auto -10px auto;
+
 }
