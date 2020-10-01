@@ -83,9 +83,9 @@ html, body {
     font-weight: bold;
   }
   &-subtitle {
-    font-size: 6vh;
-    height: 20px;
-    margin: 3vh;
+    // font-size: 6vh;
+    // height: 20px;
+    // margin: 3vh;
   }
   &-subtitle2 {
     font-size: 1em;
@@ -162,3 +162,14 @@ html, body {
     font-size: 1em;
     text-transform: uppercase;
   }
+#arrows1{
+  font-size: 6vh;
+}
+#arrows2{
+  font-size: 6vh;
+  margin-bottom: 10px;
+}
+#arrows3{
+  font-size: 6vh;
+  margin-top: 30px;
+}

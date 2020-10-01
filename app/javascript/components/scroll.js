@@ -3,6 +3,9 @@
   const checked1 = document.getElementById("tab-1");
   const checked2 = document.getElementById("tab-2");
   const checked3 = document.getElementById("tab-3");
+  const arrows1 = document.getElementById("arrows1");
+  const arrows2 = document.getElementById("arrows2");
+  const arrows3 = document.getElementById("arrows3");
   checked1.checked = true;
 
 
@@ -10,7 +13,9 @@
     // ------------- VARIABLES ------------- //
     var ticking = false;
     var isFirefox = (/Firefox/i.test(navigator.userAgent));
+    var isSafari = (/safari/i.test(navigator.userAgent));
     var isIe = (/MSIE/i.test(navigator.userAgent)) || (/Trident.*rv\:11\./i.test(navigator.userAgent));
+    var isChrome = (/chrome/.test( navigator.userAgent));
     var scrollSensitivitySetting = 30; //Increase/decrease this number to change sensitivity to trackpad gestures (up = less sensitive; down = more sensitive)
     var slideDurationSetting = 600; //Amount of time for which slide is "locked"
     var currentSlideNumber = 0;
@@ -24,6 +29,13 @@
       } else if (isIe) {
         //Set delta for IE
         var delta = -evt.deltaY;
+      } else if (isSafari) {
+        console.log("coucou safari");
+        //Set delta for safari
+        var delta = evt.detail * (-120);
+      } else if (isChrome) {
+        //Set delta for chrome
+        var delta = evt.detail
       } else {
         //Set delta for all other browsers
         var delta = evt.wheelDelta;
@@ -101,10 +113,18 @@
     // ------------- ADD EVENT LISTENER ------------- //
     var mousewheelEvent = isFirefox ? "DOMMouseScroll" : "wheel";
     window.addEventListener(mousewheelEvent, _.throttle(parallaxScroll, 60), false);
+    var mousewheelEvent2 = isChrome ? "DOMMouseScroll" : "wheel";
+    window.addEventListener(mousewheelEvent2, _.throttle(parallaxScroll, 60), false);
+    var mousewheelEvent3 = isSafari ? "DOMMouseScroll" : "wheel";
+    window.addEventListener(mousewheelEvent3, _.throttle(parallaxScroll, 60), false);
 
       checked2.addEventListener("click", _.throttle(parallaxScrollMidle, 60), false);
       checked3.addEventListener("click", _.throttle(parallaxScrollBottom, 60), false);
       checked1.addEventListener("click", _.throttle(parallaxScrollTop, 60), false);
+
+      arrows1.addEventListener("click", _.throttle(parallaxScrollMidle, 60), false);
+      arrows2.addEventListener("click", _.throttle(parallaxScrollBottom, 60), false);
+      arrows3.addEventListener("click", _.throttle(parallaxScrollTop, 60), false);
 
     function nextItemBottom() {
       var $previousSlide = $(".background").eq(currentSlideNumber - 1);
