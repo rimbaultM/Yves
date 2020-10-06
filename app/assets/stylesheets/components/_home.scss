@@ -1,0 +1,106 @@
+.home{
+  background-color: #5a5a5a;
+  height: 30vh;
+  position: absolute;
+  bottom: 0;
+  width:100vw;
+  opacity: 0.95;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding-top: 2vh;
+}
+.home-0{
+  margin-top:2vh;
+  margin-left: 4vw;
+  border-bottom: 1px solid grey;
+  width: 200px;
+  border-width: 2px;
+}
+.home-01{
+  margin-left: 4vw;
+  border-bottom: 1px solid grey;
+  width: 300px;
+  border-width: 2px;
+}
+.home-1{
+  text-align:left;
+  margin-left: 5vw;
+  margin-top: 1vh;
+  font-family: 'Lato', sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+}
+.home-3{
+  text-align:left;
+  width: 300px;
+  margin-left: 5vw;
+  font-family: 'Playfair Display', serif;
+}
+.details-1{
+  text-align:left;
+  width: 300px;
+}
+.evenement{
+  margin-right: 5vw;
+  margin-top: 4vh;
+}
+.home-2{
+  text-decoration: underline;
+  font-weight: bold;
+  text-align: left;
+
+}
+.home-21{
+  color: grey;
+  text-align: left;
+}
+.textdetail{
+  width: 45vw;
+}
+.galerie{
+    height: 400px;
+  }
+
+@media all and (orientation: portrait){
+  .home{
+    height: 45vh;
+  }
+  .titre{
+    font-size: 30px;
+    margin-top:15vh;
+    width: 65%;
+  }
+  .textdetail{
+    width: 90vw;
+  }
+  .home-2{
+    font-size: 11px;
+  }
+  .home-21{
+    font-size:10px;
+  }
+  .galerie{
+    height: 150px;
+  }
+}
+
+
+.textdetailimage{
+  display: flex;
+  justify-content:space-around;
+  margin-right: 20px;
+}
+.presentation{
+  font-family: Lato;
+}
+.border{
+  border-bottom: 1px solid black;
+  width:60px;
+}
+.border2{
+  border-bottom: 0.5px solid black;
+  width:250px;
+}
+
+
