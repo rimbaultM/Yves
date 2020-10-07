@@ -40,7 +40,7 @@ html, body {
     background-color: rgba(0,0,0,.3);
   }
   &:first-child {
-    background-image: url(https://res.cloudinary.com/dc9pm7uj8/image/upload/v1600779379/Brocante_1_ahavrs_clmsqx.jpg);
+    background-image: url(https://res.cloudinary.com/dc9pm7uj8/image/upload/v1600779381/Brocante_2_uqxbik_v8tia8.jpg);
     transform: translateY(-$parallax-offset / 2);
     .content-wrapper {
       transform: translateY($parallax-offset /2);
@@ -50,7 +50,7 @@ html, body {
     background-image: url(https://res.cloudinary.com/dc9pm7uj8/image/upload/v1600779381/Brocante_3_h082zj_cxhf7i.jpg);
   }
   &:nth-child(3) {
-    background-image: url(https://res.cloudinary.com/dc9pm7uj8/image/upload/v1600779381/Brocante_2_uqxbik_v8tia8.jpg);
+    background-image: url(https://res.cloudinary.com/dc9pm7uj8/image/upload/v1600779379/Brocante_1_ahavrs_clmsqx.jpg);
   }
 }
 /* Set stacking context of slides */
@@ -63,6 +63,7 @@ html, body {
 .content {
   &-wrapper {
   height: 100vh;
+   width: 100vw;
   display: flex;
   text-align: center;
   flex-flow: column nowrap;
@@ -109,7 +110,7 @@ html, body {
     background-color: white;
     font-family: 'Playfair Display', serif;
     width: 100%;
-    padding: 5vw;
+    padding:0 5vw;
     box-shadow: 10px 13px 10px 4px rgba(0,0,0,0.40);
     opacity: 0.95;
     display:flex;
@@ -164,6 +165,7 @@ html, body {
 .textdetailtitle{
     font-size: 1em;
     text-transform: uppercase;
+    margin: 20px 0 0 0;
   }
 #arrows1{
   font-size: 6vh;
@@ -179,6 +181,6 @@ html, body {
   font-size: 6vh;
   margin-top: 30px;
   width: 25px;
-  margin: 25px auto -10px auto;
+  margin: 65px auto -10px auto;
 
 }

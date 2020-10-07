@@ -7,7 +7,7 @@
 
 }
 #envoyer{
-  margin-bottom: 40px;
+  margin-bottom: 100px;
 }
 .ligne{
   width: 80vw;
@@ -19,12 +19,6 @@
   color: black;
   text-align: left;
   margin-top: 20px;
-}
-.textcontact h3{
-  font-size: 3vh;
-}
-.textcontact p{
-  font-size: 2vh;
 }
 .laws{
   position: absolute;
@@ -48,19 +42,25 @@ text-align: center;
   color: black;
 }
 .row1{
-  margin-top: 15px;
+  margin-top: 10px;
   width: 100%;
+  font-family: 'Lato', sans-serif;
 }
 .row2{
-  margin-top: 15px;
+  margin-top: 10px;
   width: 100%;
+  font-family: 'Lato', sans-serif;
 }
 .row3{
   margin-top: 15px;
+  font-family: 'Lato', sans-serif;
 }
 .row4{
   color:black;
+  font-family: 'Lato', sans-serif;
   text-transform: lowercase;
-  font-size: 8px;
-  width: 100%
+  font-size: 9px;
+  // width: 100%;
+  margin-top: 20px;
+
 }
